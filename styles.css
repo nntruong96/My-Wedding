@@ -224,7 +224,7 @@ nav.nav::after {
   text-decoration: unset;
   border-radius: 4px;
   overflow: hidden;
-  width: 200px;
+  width: 150px;
   margin-top: 20px;
 }
 .map-container > :first-child {
