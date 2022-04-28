@@ -24,6 +24,13 @@
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
       rel="stylesheet"
     />
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" type="text/javascript"></script>
+          
+    <!-- nanogallery2 -->
+    <link  href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script  type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
     <title>My Wedding</title>
   </head>
   <body>
@@ -36,9 +43,9 @@
           <p class="item">
             <a href="#album" class="page-scroll">Ảnh</a>
           </p>
-          <p class="item">
+          <!-- <p class="item">
             <a href="#schedule" class="page-scroll">Schedule</a>
-          </p>
+          </p> -->
           <p class="item">
             <a href="#location" class="page-scroll">Bản đồ</a>
           </p>
@@ -51,14 +58,14 @@
             <br />
           </h2>
           <span class="sub-title">DIỄN RA VÀO NGÀY</span>
-          <h4>22 tháng 5 2022</h4>
+          <h4>15 tháng 5 2022</h4>
           <h3 class="name">Nhựt Trường <span>&amp;</span> Diễm My</h3>
         </div>
         <div class="big-photo text-center">
           <img class="flower-frame-top" src="./img/flowers-frame.png" alt="" />
           <div class="main-img">
             <img
-              src="https://b-f54-zpg-r.zdn.vn/6887690608898553788/e42eed9c181cd7428e0d.jpg"
+              src="./img/main.jpeg"
               alt="about-us"
             />
           </div>
@@ -100,29 +107,15 @@
         </div>
       </section>
       <section id="album">
-        <h2 class="text-center font-play">Ảnh Cưới</h2>
-        <div class="albums">
-          <span style="--i: 1"><img src="./img/a1.jpeg" alt="map" /></span>
-          <span style="--i: 2"><img src="./img/a2.jpeg" alt="map" /></span>
-          <span style="--i: 3"><img src="./img/a3.jpeg" alt="map" /></span>
-          <span style="--i: 4"><img src="./img/a4.jpeg" alt="map" /></span>
-          <span style="--i: 5"><img src="./img/a5.jpeg" alt="map" /></span>
-          <span style="--i: 6"><img src="./img/a6.jpeg" alt="map" /></span>
-          <span style="--i: 7"><img src="./img/a7.jpeg" alt="map" /></span>
-          <span style="--i: 8"><img src="./img/a8.jpeg" alt="map" /></span>
-          <span style="--i: 9"><img src="./img/a9.jpeg" alt="map" /></span>
-          <span style="--i: 10"><img src="./img/a10.jpeg" alt="map" /></span>
-          <span style="--i: 11"><img src="./img/a11.jpeg" alt="map" /></span>
-          <span style="--i: 12"><img src="./img/a12.jpeg" alt="map" /></span>
-          <span style="--i: 13"><img src="./img/a13.jpeg" alt="map" /></span>
-          <span style="--i: 14"><img src="./img/a14.jpeg" alt="map" /></span>
-          <span style="--i: 15"><img src="./img/a15.jpeg" alt="map" /></span>
-        </div>
+         <h2 class="text-center font-play">Ảnh Cưới</h2>
+          <div id="nanogallery2">gallery_made_with_nanogallery2</div>
+        </div> 
+      
       </section>
       <section id="location">
         <h2 class="text-center font-play">Bản đồ</h2>
         <div class="map-container">
-          <a href="https://goo.gl/maps/2PiQeLbVjjXDae8X6" target="_blank">
+          <a href="https://www.google.com/maps/place/1+Tr%E1%BA%A7n+H%C6%B0ng+%C4%90%E1%BA%A1o,+Ph%C6%B0%E1%BB%9Dng+5,+Th%C3%A0nh+ph%E1%BB%91+C%C3%A0+Mau,+C%C3%A0+Mau,+Vietnam/@9.1757981,105.1524525,19z/data=!4m5!3m4!1s0x31a1490a788434f3:0x7c361fcceb73a6aa!8m2!3d9.1759776!4d105.1527136?shorturl=1" target="_blank">
             <img src="./img/myHomeMap.png" alt="map" />
             <p>
               <img
@@ -133,7 +126,7 @@
             </p>
           </a>
           <a
-            href="https://maps.apple.com/?address=P.%20Ph%C6%B0%E1%BB%9Bc%20Th%E1%BB%9Bi%2C%20Q.%20%C3%94%20M%C3%B4n%2C%20Th%C3%A0nh%20Ph%E1%BB%91%20C%E1%BA%A7n%20Th%C6%A1%2C%20Vi%E1%BB%87t%20Nam&auid=6486617919320112491&ll=10.125015%2C105.674257&lsp=7618&q=P.%20Ph%C6%B0%E1%BB%9Bc%20Th%E1%BB%9Bi&_ext=Ch4KBAgEEAkKBAgFEAMKBAgGEAQKBAgKEAIKBAhVEAsSJilH6dK%2FJCkkQDFRCC6gYWlaQDm6OUt%2F5UckQEHxxc1fV21aQFAM&t=m&fbclid=IwAR2b-reuoHYzZawHCISEWn3cPawDriJMvozsONJDsBb76m3l1AIouGNXzZE"
+            href="https://maps.apple.com/place?q=1%20Tr%E1%BA%A7n%20H%C6%B0ng%20%C4%90%E1%BA%A1o&ll=9.1756%2C105.152981&address=1%20Tr%E1%BA%A7n%20H%C6%B0ng%20%C4%90%E1%BA%A1o%2C%20Ph%C6%B0%E1%BB%9Dng%205%2C%20TP.%20C%C3%A0%20Mau%2C%20C%C3%A0%20Mau%2C%20Vi%E1%BB%87t%20Nam"
             target="_blank"
           >
             <img src="./img/myHomeMap.png" alt="map" />
@@ -149,9 +142,9 @@
       </section>
 
       <div class="cat">
-        <img class="paw paw--left" src="https://i.imgur.com/K49xlRs.png" />
-        <img class="paw paw--right" src="https://i.imgur.com/K49xlRs.png" />
-        <img class="head" src="https://i.imgur.com/ZV0lspN.png" />
+        <img class="paw paw--left" src="./img/K49xlRs.png" />
+        <img class="paw paw--right" src="./img/K49xlRs.png" />
+        <img class="head" src="./img/ZV0lspN.png" />
       </div>
     </div>
     <script src="./main.js"></script>
