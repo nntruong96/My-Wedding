@@ -154,34 +154,18 @@ let showAlbum = () => {
 
       // DEEP LINKING
       locationHash: true,
-      items: [
-        { src: './img/a20.jpg', srct: './img/a20.jpg' },
-        { src: './img/a12.jpeg', srct: './img/a12.jpeg' },
-        { src: './img/a2.jpeg', srct: './img/a2.jpeg' },
-        { src: './img/a3.jpeg', srct: './img/a3.jpeg' },
-        { src: './img/a4.jpeg', srct: './img/a4.jpeg' },
-        { src: './img/a5.jpeg', srct: './img/a5.jpeg' },
-        { src: './img/a6.jpeg', srct: './img/a6.jpeg' },
-        { src: './img/a7.jpeg', srct: './img/a7.jpeg' },
-        { src: './img/a8.jpeg', srct: './img/a8.jpeg' },
-        { src: './img/a9.jpeg', srct: './img/a9.jpeg' },
-        { src: './img/a10.jpeg', srct: './img/a10.jpeg' },
-        { src: './img/a11.jpeg', srct: './img/a11.jpeg' },
-        { src: './img/a1.jpeg', srct: './img/a1.jpeg' },
-        { src: './img/a17.jpg', srct: './img/a17.jpg' },
-        { src: './img/a18.jpg', srct: './img/a18.jpg' },
-        { src: './img/a19.jpg', srct: './img/a19.jpg' },
-        { src: './img/a20.jpg', srct: './img/a20.jpg' },
-        { src: './img/a21.jpg', srct: './img/a21.jpg' },
-        { src: './img/a22.jpeg', srct: './img/a22.jpeg' },
-        { src: './img/a23.jpeg', srct: './img/a23.jpeg' },
-        { src: './img/a24.jpeg', srct: './img/a24.jpeg' },
-        { src: './img/a25.jpeg', srct: './img/a25.jpeg' },
-        { src: './img/a26.jpeg', srct: './img/a26.jpeg' },
-        { src: './img/a27.jpeg', srct: './img/a27.jpeg' },
-        { src: './img/a28.jpeg', srct: './img/a28.jpeg' },
-      ],
+      items: getItems(),
     });
   });
+};
+let getItems = () => {
+  let items = [];
+  for (let i = 1; i <= 23; i++) {
+    items.push({
+      scr: `./img/${i}.png`,
+      srct: `./img/small/${i}.png`,
+    });
+  }
+  return items;
 };
 showAlbum();
