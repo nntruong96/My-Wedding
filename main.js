@@ -162,10 +162,11 @@ let getItems = () => {
   let items = [];
   for (let i = 1; i <= 23; i++) {
     items.push({
-      scr: `./img/${i}.png`,
+      src: `./img/${i}.png`,
       srct: `./img/small/${i}.png`,
     });
   }
+  console.log(items);
   return items;
 };
 showAlbum();
